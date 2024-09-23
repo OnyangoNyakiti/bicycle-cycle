@@ -58,7 +58,7 @@ const Model = styled.h3`
 
 const Price = styled.p`
     margin: 0.5rem 0;
-    color: #ff6347;
+    color: #328283;
     font-size: 1.2rem;
 `;
 
@@ -73,7 +73,7 @@ const Button = styled.button`
     transition: background-color 0.3s, transform 0.3s;
 
     &:hover {
-        background-color: #ff6347;
+        background-color: #328283;
         transform: translateY(-2px);
     }
 `;

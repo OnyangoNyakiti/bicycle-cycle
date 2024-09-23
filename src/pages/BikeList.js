@@ -8,6 +8,9 @@ const BikeList = () => {
     const bikes = [
         { id: 1, model: 'Mountain X1', type: 'mountain', price: '$5', image: 'bike1.jpg' },
         { id: 2, model: 'Roadster Z', type: 'road', price: '$4', image: 'bike2.jpg' },
+        { id: 3, model: 'Bmx Z', type: 'road', price: '$6', image: 'bike3.jpg' },
+        { id: 4, model: 'Electra Cruiser', type: 'cruiser', price: '$7', image: 'bike4.jpg' },
+        { id: 5, model: 'Trek 520', type: 'tour', price: '$8', image: 'bike5.jpg' },
     ];
 
     const filteredBikes = bikes.filter(bike => bike.model.toLowerCase().includes(filter.toLowerCase()) || bike.type.includes(filter));

@@ -5,8 +5,11 @@ import BikeCard from '../components/BikeCard';
 
 const Home = () => {
     const featuredBikes = [
-        { id: 1, model: 'Mountain X1', price: '$5', image: 'bike1.jpg' },
-        { id: 2, model: 'Roadster Z', price: '$4', image: 'bike2.jpg' },
+        { id: 1, model: 'Mountain X1', price: '35ksh', image: 'bike1.jpg' },
+        { id: 2, model: 'Roadster Z', price: '30ksh', image: 'bike2.jpg' },
+        { id: 3, model: 'bmx Z', price: '40ksh', image: 'bike3.jpg' },
+        { id: 4, model: 'Trek Dual Sport', price: '45ksh', image: 'bike4.jpg' },
+        { id: 5, model: 'Trek 520', price: '50ksh', image: 'bike5.jpg' },
     ];
 
     return (
@@ -108,7 +111,7 @@ const Subtitle = styled.p`
 const CTAButton = styled(Link)`
     display: inline-block;
     margin-top: 1.5rem;
-    background-color: #ff6347;
+    background-color: #1e90ff;
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 30px;
@@ -119,7 +122,7 @@ const CTAButton = styled(Link)`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #1e90ff;
+        background-color: #38989a;
         transform: translateY(-3px);
     }
 `;

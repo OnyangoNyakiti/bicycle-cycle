@@ -51,18 +51,19 @@ const Description = styled.p`
 `;
 
 const Price = styled.p`
-  color: #ff6347;
-  font-size: 1.5rem;
+    color: #328283;
+    font-size: 1.5rem;
 `;
 
 const Button = styled.button`
-  background-color: #1e90ff;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  cursor: pointer;
-  &:hover {
-    background-color: #ff6347;
-  }
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #328283;
+    }
 `;

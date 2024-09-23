@@ -3,18 +3,18 @@ import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 
 const MobileMoney = () => {
-    const { id } = useParams(); // Get bike ID from URL
+    const { model } = useParams(); // Get bike ID from URL
 
     const handleMobileMoneyPayment = () => {
         // Implement mobile money payment logic here
-        console.log(`Processing mobile money payment for bike ID: ${id}`);
+        console.log(`Processing mobile money payment for bike ID: ${model}`);
     };
 
     return (
         <Container>
             <Title>Pay via Mobile Money</Title>
             <Instructions>
-                To complete your payment for bike ID: {id}, please follow the instructions below:
+                To complete your payment for bike ID: {model}, please follow the instructions below:
                 <ol>
                     <li>Open your mobile money app.</li>
                     <li>Enter the payment number: +123456789</li>

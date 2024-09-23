@@ -66,31 +66,31 @@ const Title = styled.h2`
 `;
 
 const Input = styled.input`
-  margin-bottom: 1rem;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: border-color 0.3s;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
 
-  &:focus {
-    border-color: #1e90ff;
-  }
+    &:focus {
+        border-color: #328283;
+    }
 `;
 
 const SubmitButton = styled.button`
-  background-color: #1e90ff;
-  color: white;
-  border: none;
-  padding: 0.75rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
 
-  &:hover {
-    background-color: #ff6347;
-  }
+    &:hover {
+        background-color: #328283;
+    }
 `;
 
 const SwitchForm = styled.p`

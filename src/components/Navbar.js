@@ -52,23 +52,27 @@ const Menu = styled.ul`
 const MenuItem = styled.li`
     margin: 0 1.5rem;
     font-size: 1.1rem;
+
     a {
         color: white;
         text-decoration: none;
         position: relative;
         transition: color 0.3s ease;
+
         &::after {
             content: '';
             position: absolute;
             width: 0;
             height: 2px;
-            background-color: #ff6347;
+            background-color: #328283;
             left: 50%;
             bottom: -4px;
             transition: width 0.3s ease, left 0.3s ease;
         }
+
         &:hover {
-            color: #ff6347;
+            color: #328283;
+
             &::after {
                 width: 100%;
                 left: 0;
@@ -78,16 +82,19 @@ const MenuItem = styled.li`
 `;
 
 const Button = styled.div`
-  background-color: #ff6347;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  &:hover {
-    background-color: #ff4500;
-  }
-  transition: background-color 0.3s ease;
+    background-color: #328283;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    &:hover {
+        background-color: #2d4b4e;
+    }
+
+    transition: background-color 0.3s ease;
 `;
