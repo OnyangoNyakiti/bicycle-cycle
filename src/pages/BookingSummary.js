@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const bookings = [
     {
@@ -9,7 +9,6 @@ const bookings = [
         price: '$10',
         date: '2024-09-22',
     },
-    // Add more booking data as needed
 ];
 
 const BookingSummary = () => {
@@ -36,42 +35,72 @@ const BookingSummary = () => {
 
 export default BookingSummary;
 
+const fadeIn = keyframes`
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
+
 const Container = styled.div`
-  padding: 2rem;
-  max-width: 800px;
-  margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
 `;
 
 const Title = styled.h2`
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: ${fadeIn} 1s ease-in-out;
 `;
 
 const BookingCard = styled.div`
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff, #f7f9fc);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: ${fadeIn} 0.5s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
 `;
 
 const Model = styled.h3`
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #0072ff;
 `;
 
 const Details = styled.div`
-  font-size: 1rem;
-  color: #555;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
 `;
 
 const Detail = styled.p`
-  margin: 0.5rem 0;
+    margin: 0.5rem 0;
 `;
 
 const Message = styled.p`
   text-align: center;
-  font-size: 1.2rem;
-  color: #777;
+  font-size: 1.3rem;
+  color: #f7f9fc;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+  animation: ${fadeIn} 1s ease-in-out;
 `;

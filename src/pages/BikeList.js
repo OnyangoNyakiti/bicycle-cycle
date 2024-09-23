@@ -1,4 +1,3 @@
-// src/pages/BikeList.js
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import FilterBar from '../components/FilterBar';

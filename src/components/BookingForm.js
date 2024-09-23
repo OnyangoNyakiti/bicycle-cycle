@@ -8,7 +8,6 @@ const BookingForm = ({ bike }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle booking submission logic here
         console.log(`Booking: ${bike.model}, Date: ${date}, Time: ${time}, Duration: ${duration}`);
         alert('Booking confirmed!');
     };

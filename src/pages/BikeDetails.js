@@ -1,10 +1,7 @@
-// src/pages/BikeDetails.js
 import React from 'react';
 import styled from 'styled-components';
-// import { useParams } from 'react-router-dom';
 
 const BikeDetails = () => {
-    // const { id } = useParams();
     const bike = {
         id: 1,
         model: 'Mountain X1',
@@ -12,7 +9,6 @@ const BikeDetails = () => {
         price: '$5',
         image: '/images/bike1.jpg',
         description: 'A high-quality mountain bike for all terrains.',
-        // Add more bike data as needed
     };
 
     return (
